@@ -356,10 +356,6 @@ tfoot td, table th {
 
 @media (max-width: 800px) {
 
-    body {
-    width: 100vh;
-    }
-
     .intro-content, .grid {
         grid-template-columns: 1fr;
     }
