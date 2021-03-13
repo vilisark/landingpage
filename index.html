@@ -11,6 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
+    <link rel="script" href="LandingPage/assets/js/index.js">
 </head>
 
 <body>
@@ -23,6 +24,7 @@
             <nav>
                 <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#intro">intro</a></li>
+                    <li><a href="#4k">4k</a></li>
                     <li><a href="#grid-one">grid-one</a></li>
                     <li><a href="#gallery">gallery</a></li>
                     <li><a href="#grid-two">grid-two</a></li>
@@ -47,6 +49,20 @@
                 <img src="LandingPage/assets/img/javascript.svg" alt="Logo de HTML, CSS e JS.">
             </div>
         </div>
+    </section>
+    <section id="4k"class="myVideo section">
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+        <source src="../../Teste/assets/costarica.mp4.mp4" type="video/mp4">
+    </video>
+
+    <!-- Optional: some overlay text to describe the video -->
+<!--     <div class="video">
+        <h1>Heading</h1>
+        <p>Lorem ipsum...</p> -->
+        <!-- Use a button to pause/play the video with JavaScript -->
+<!--         <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div> -->
     </section>
 
     <section id="intro" class="white-bg section">
@@ -250,6 +266,7 @@
                     <div class="form-group full-width">
                         <button type="submit">Send message</button>
                     </div>
+
 
                 </fieldset>
             </div>

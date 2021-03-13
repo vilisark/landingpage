@@ -27,6 +27,41 @@ body {
     line-height: 1.5;
 }
 
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+    position: block;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+  }
+  
+  /* Add some content at the bottom of the video/page */
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+  
+  /* Style the button used to pause/play the video */
+  #myBtn {
+    width: 200px;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  #myBtn:hover {
+    background: #ddd;
+    color: black;
+  }
+
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', sans-serif;
 }
@@ -355,7 +390,6 @@ tfoot td, table th {
 }
 
 @media (max-width: 800px) {
-
     .intro-content, .grid {
         grid-template-columns: 1fr;
     }
@@ -406,9 +440,7 @@ tfoot td, table th {
         padding: 0.5rem;
         cursor: pointer;
     }
-
-    /* × */
-
+    
     .close-menu:checked~.menu {
         display: block;
     }
@@ -419,6 +451,16 @@ tfoot td, table th {
 
     .menu-spacing {
         display: none;
+    }
+
+    .myVideo {
+        box-sizing: border-box;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center center;
+        align-items: center;
+        overflow: hidden;
     }
 
 }
