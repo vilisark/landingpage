@@ -389,6 +389,35 @@ tfoot td, table th {
     border: 0.1rem solid var(--primarycolor);
 }
 
+.video_contain{
+    display: block;
+    position: relative;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    }
+    
+    video {
+    min-width: 100%;
+     min-height: 100%;
+    z-index: 0;
+    background-position: center;
+    background-size: cover;
+    }    
+
+    #id {
+        width: 100vw;
+        height: 100vh;
+        display:block;
+        position: relative;
+        }
+
 @media (max-width: 800px) {
     .intro-content, .grid {
         grid-template-columns: 1fr;
@@ -440,7 +469,7 @@ tfoot td, table th {
         padding: 0.5rem;
         cursor: pointer;
     }
-    
+
     .close-menu:checked~.menu {
         display: block;
     }
