@@ -387,36 +387,21 @@ tfoot td, table th {
     color: var(--primarycolor);
     transform: rotate(-90deg);
     border: 0.1rem solid var(--primarycolor);
-}
-
-.video_contain{
-    display: block;
-    position: relative;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    top: 0;
-    left: 0;
+} 
+    
+.videoInsert {
+    position: absolute;
+    top: 60px;
     right: 0;
     bottom: 0;
-    width: 100vh;
-    height: 100%;
-    }
-    
-    video {
-    min-width: 100vw;
-     min-height: 100vh;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
     z-index: 0;
-    background-position: center;
     background-size: cover;
+    overflow: hidden;
     }    
-
-    #id {
-        width: 100vw;
-        height: 100vh;
-        display:block;
-        position: relative;
-        }
 
 @media (max-width: 800px) {
     .intro-content, .grid {

@@ -1,4 +1,4 @@
-var video = document.getElementById("myVideo");
+var video = document.getElementById("videoInsert");
 
 // Pause and play the video, and change the button text
 function myFunction() {
