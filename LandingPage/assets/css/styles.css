@@ -387,21 +387,28 @@ tfoot td, table th {
     color: var(--primarycolor);
     transform: rotate(-90deg);
     border: 0.1rem solid var(--primarycolor);
-} 
-    
-.videoInsert {
-    position: absolute;
-    top: 60px;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: 0;
-    background-size: cover;
-    overflow: hidden;
-    }    
+}
+
+    .myVideo {
+        box-sizing: content-box;
+        display: flex;
+        height: 100%;
+        width: 100%;
+        justify-content: center center;
+        align-items: center;
+        overflow: hidden;
+    }
+
+    .myVideoBg {
+        box-sizing: content-box;
+        position: fixed;
+        height: auto;
+        width: auto;
+        justify-content: center center;
+        align-items: center;
+        overflow: hidden;
+        z-index: -1;
+    }
 
 @media (max-width: 800px) {
     .intro-content, .grid {
@@ -455,6 +462,8 @@ tfoot td, table th {
         cursor: pointer;
     }
 
+    /* × */
+
     .close-menu:checked~.menu {
         display: block;
     }
@@ -468,6 +477,7 @@ tfoot td, table th {
     }
 
     .myVideo {
+
         box-sizing: border-box;
         display: flex;
         height: 100%;
