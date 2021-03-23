@@ -11,7 +11,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-    <link rel="script" href="LandingPage/assets/js/index.js">
+    <link rel="script" href="/HTML/Landing Page/LandingPage/assets/js/index.js">
 </head>
 
 <body>
@@ -20,14 +20,14 @@
     <label class="close-menu-label" for="close-menu" title="close menu"></label>
     <aside class="menu white-bg">
         <div class="main-content menu-content">
-            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#4k">LOGO</a></h1>
+            <h1 onclick="getElementById('close-menu').checked = false;"><a href="#home">LOGO</a></h1>
             <nav>
                 <ul onclick="getElementById('close-menu').checked = false;">
                     <li><a href="#4k">4k</a></li>
-                    <li><a href="#home">intro</a></li>
-                    <li><a href="#intro">news</a></li>
+                    <li><a href="#intro">intro</a></li>
                     <li><a href="#grid-one">grid-one</a></li>
                     <li><a href="#gallery">gallery</a></li>
+                    <li><a href="#grid-two">grid-two</a></li>
                     <li><a href="#pricing">pricing</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
@@ -36,12 +36,7 @@
     </aside>
 
     <div class="menu-spacing"></div>
-    <div id="4k" class="video_shader section"></div>
-    <div class="myVideo">
-        <video id="videoInsert" loop autoplay controls="true" class="videoInsert" type='video/mp4'>
-          <source src="/LandingPage/assets/vd/costarica.mp4.mp4" type="video/mp4">
-        </video>
-    </div> 
+
     <section id="home" class="intro main-bg section">
         <div class="main-content intro-content">
             <div class="intro-text-content">
@@ -55,6 +50,21 @@
             </div>
         </div>
     </section>
+    <section id="4k" class="myVideo section">
+        <!-- The video -->
+        <video autoplay muted loop id="myVideo">
+            <source src="/Landing Page/LandingPage/assets/video/tec-bg.mp4" type="video/mp4">
+        </video>
+
+        <!-- Optional: some overlay text to describe the video -->
+        <!--     <div class="video">
+        <h1>Heading</h1>
+        <p>Lorem ipsum...</p> -->
+        <!-- Use a button to pause/play the video with JavaScript -->
+        <!--         <button id="myBtn" onclick="myFunction()">Pause</button>
+    </div> -->
+    </section>
+
     <section id="intro" class="white-bg section">
         <div class="main-content top3-content">
             <h2>news coverage and some surprises</h2>
@@ -101,36 +111,39 @@
         <div class="main-content grid-one-content">
             <h2 class="grid-main-heading">Gallery</h2>
             <p class="grid-description">A brief description</p>
-
-            <div class="grid">
-                <div class="gallery-img">
-                    <img src="https://images.unsplash.com/photo-1614788679832-7879205af178?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=360"
-                        alt="random image from unsplash">
-                </div>
-                <div class="gallery-img">
+            <section class="section">
+                <video autoplay muted loop id="myVideo" class="myVideo section">
+                    <source src="/Landing Page/LandingPage/assets/video/motion-bg.mp4" type="video/mp4">
+                </video>
+                <div class="grid">
                     <div class="gallery-img">
-                        <img src="https://images.unsplash.com/photo-1614778265188-dff1832ae5a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=360"
+                        <img src="https://images.unsplash.com/photo-1614788679832-7879205af178?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=360"
+                            alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <div class="gallery-img">
+                            <img src="https://images.unsplash.com/photo-1614778265188-dff1832ae5a2?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=360"
+                                alt="random image from unsplash">
+                        </div>
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1612805232759-791e417dab4f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=360"
+                            alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1614419459014-ff784d094fee?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=360"
+                            alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1612908385159-2207c47eac61?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=360"
+                            alt="random image from unsplash">
+                    </div>
+                    <div class="gallery-img">
+                        <img src="https://images.unsplash.com/photo-1613658171603-ccb22cbe211f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=360"
                             alt="random image from unsplash">
                     </div>
                 </div>
-                <div class="gallery-img">
-                    <img src="https://images.unsplash.com/photo-1612805232759-791e417dab4f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=360"
-                        alt="random image from unsplash">
-                </div>
-                <div class="gallery-img">
-                    <img src="https://images.unsplash.com/photo-1614419459014-ff784d094fee?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=360"
-                        alt="random image from unsplash">
-                </div>
-                <div class="gallery-img">
-                    <img src="https://images.unsplash.com/photo-1612908385159-2207c47eac61?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=360"
-                        alt="random image from unsplash">
-                </div>
-                <div class="gallery-img">
-                    <img src="https://images.unsplash.com/photo-1613658171603-ccb22cbe211f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=360&ixlib=rb-1.2.1&q=80&w=360"
-                        alt="random image from unsplash">
-                </div>
-
-            </div>
+            </section>
         </div>
     </section>
 
