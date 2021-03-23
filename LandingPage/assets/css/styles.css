@@ -138,7 +138,7 @@ tfoot td, table th {
 	min-width: 100%; 
 	min-height: 100%;
 	width: auto; 
-	height: auto; 
+	height: 100vh; 
 	z-index: -1000;
 	background: url(/landingpage/LandingPage/assets/video/abstract.mp4) no-repeat;
 	background-size: cover; 
@@ -260,6 +260,7 @@ tfoot td, table th {
 
 .grid-main-heading {
     margin-bottom: 1rem;
+    color: var(--white-color);
 }
 
 .grid-description {
