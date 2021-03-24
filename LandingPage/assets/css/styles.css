@@ -132,16 +132,12 @@ tfoot td, table th {
 }
 
 .bg_video{
-	position: fixed; 
-	right: 0; 
-	bottom: 0;
-	min-width: 100vw; 
-	min-height: 100vh;
-	width: auto; 
-	height: 100vh; 
+    box-sizing:content-box;
+	position: fixed;
+    width: 100%;
 	z-index: -1000;
 	background-size: cover; 
-    justify-content: center center;
+    justify-content:center center;
 }
 
 .white-bg {
