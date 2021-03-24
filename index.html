@@ -11,7 +11,6 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Open+Sans:ital,wght@0,400;0,700;1,400&display=swap"
         rel="stylesheet">
-    <link rel="script" href="/HTML/Landing Page/LandingPage/assets/js/index.js">
 </head>
 
 <body>
@@ -108,7 +107,7 @@
     </section>
     <video autoplay loop class="bg_video">
         <source src="/LandingPage/assets/video/motion.mp4" type="video/mp4">
-    </video>	
+    </video>
     <section id="gallery" class="grid-one section">
         <div class="main-content grid-one-content">
             <h2 class="grid-main-heading">Gallery</h2>
@@ -281,6 +280,18 @@
     </footer>
 
     <a class="back-to-top" href="#">➤</a>
+    <script>
+        var video = document.getElementById("bg_video");
+
+        function myFunction() {
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+        myFunction();
+    </script>
 </body>
 
 </html>
