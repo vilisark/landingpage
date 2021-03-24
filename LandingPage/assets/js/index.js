@@ -1,4 +1,4 @@
-var video = document.getElementById("myVideo");
+var video = document.getElementById("bg_video");
 
 function myFunction() {
   if (video.paused) {

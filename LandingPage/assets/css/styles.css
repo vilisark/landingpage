@@ -133,17 +133,16 @@ tfoot td, table th {
 
 .bg_video{
 	position: fixed; 
-    margin: auto 0;
 	right: 0; 
 	bottom: 0;
-	min-width: 100%; 
-	min-height: 100%;
+	min-width: 100vw; 
+	min-height: 100vw;
 	width: auto; 
 	height: 100vh; 
 	z-index: -1000;
 	background: url(/LandingPage/assets/video/motion.mp4) no-repeat;
 	background-size: cover; 
-    justify-content: center center;
+    justify-content: center;
 }
 
 .white-bg {
