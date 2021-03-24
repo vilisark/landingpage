@@ -377,6 +377,8 @@ tfoot td, table th {
     margin-top: 2rem;
     justify-content: center center;
     text-align: center;
+    background: none;
+    color: var(--white-color)
 }
 
 .close-menu {
