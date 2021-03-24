@@ -136,13 +136,12 @@ tfoot td, table th {
 	right: 0; 
 	bottom: 0;
 	min-width: 100vw; 
-	min-height: 100vw;
+	min-height: 100vh;
 	width: auto; 
 	height: 100vh; 
 	z-index: -1000;
-	background: url(/LandingPage/assets/video/motion.mp4) no-repeat;
 	background-size: cover; 
-    justify-content: center;
+    justify-content: center center;
 }
 
 .white-bg {
@@ -414,16 +413,6 @@ tfoot td, table th {
         overflow: hidden;
     }
 
-    .myVideoBg {
-        box-sizing: content-box;
-        position: fixed;
-        height: auto;
-        width: auto;
-        justify-content: center center;
-        align-items: center;
-        overflow: hidden;
-    }
-
 @media (max-width: 800px) {
     .intro-content, .grid {
         grid-template-columns: 1fr;
@@ -493,12 +482,25 @@ tfoot td, table th {
     .myVideo {
 
         box-sizing: border-box;
-        display: flex;
-        height: 100%;
-        width: 100%;
+        display: fixed;
+        height: 100vh;
+        width: 100vw;
         justify-content: center center;
         align-items: center;
         overflow: hidden;
     }
 
-}
+    .bg_video {
+        position: fixed; 
+        right: 0; 
+        bottom: 0;
+        min-width: 100vw; 
+        min-height: 100vh;
+        width: auto; 
+        height: 100vh; 
+        z-index: -1000;
+        background-size: cover; 
+    }
+        
+ }
+
